@@ -9,7 +9,7 @@ class Games {
     private string $team2;
     private string $winner;
 
-    public function __construct(){
+    public function __construct(string $name, DateTime $date = new DateTime(), string $team1, string $team2, string $winner){
 
     }
 
