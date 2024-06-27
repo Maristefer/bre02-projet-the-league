@@ -5,10 +5,10 @@ class Players {
     private ? int $id = null;
     private string $nickmane;
     private string $bio;
-    private string $portrait;
-    private string $team;
+    private int $portrait;
+    private int $team;
 
-    public function __construct(string $nickname, string $bio, string $portrait, string $team){
+    public function __construct(string $nickname, string $bio, int $portrait, int $team){
 
     }
 
@@ -42,22 +42,22 @@ class Players {
         $this->bio = $bio;
     }
 
-    public function getPortrait(): string
+    public function getPortrait(): int
     {
         return $this->portrait;
     }
 
-    public function setPortrait(string $portrait): void
+    public function setPortrait(int $portrait): void
     {
         $this->portrait = $portrait;
     }
 
-    public function getTeam(): string
+    public function getTeam(): int
     {
         return $this->team;
     }
 
-    public function setTeam(string $team): void
+    public function setTeam(int $team): void
     {
         $this->team = $team;
     }
