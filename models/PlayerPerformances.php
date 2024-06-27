@@ -3,11 +3,12 @@
 class PlayerPerformances{
 
     private ? int $id = null;
-    private string $player;
-    private string $game;
-    private string $point;
+    private int $player;
+    private int $game;
+    private int $point;
+    private int $assists;
     
-    public function __construct(string $player, string $game, string $point){
+    public function __construct(int $player, int $game, int $point, int $assists){
 
     }
 
@@ -21,33 +22,43 @@ class PlayerPerformances{
         $this->id = $id;
     }
 
-    public function getPlayer(): string
+    public function getPlayer(): int
     {
         return $this->player;
     }
 
-    public function setPlayer(string $player): void
+    public function setPlayer(int $player): void
     {
         $this->player = $player;
     }
 
-    public function getGame(): string
+    public function getGame(): int
     {
         return $this->game;
     }
 
-    public function setGame(string $game): void
+    public function setGame(int $game): void
     {
         $this->game = $game;
     }
 
-    public function getPoint(): string
+    public function getPoint(): int
     {
         return $this->point;
     }
 
-    public function setPoint(string $point): void
+    public function setPoint(int $point): void
     {
         $this->point = $point;
+    }
+
+    public function getAssists(): int
+    {
+        return $this->assists;
+    }
+
+    public function setAssists(int $assists): void
+    {
+        $this->assists = $assists;
     }
 }

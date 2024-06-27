@@ -5,9 +5,9 @@ class Teams{
     private ? int $id = null;
     private string $name;
     private string $description;
-    private string $logo;
+    private int $logo;
 
-    public function __construct(string $name, string $description, string $logo){
+    public function __construct(string $name, string $description, int $logo){
 
     }
     public function getId(): ?int
@@ -40,12 +40,12 @@ class Teams{
         $this->description = $description;
     }
 
-    public function getLogo(): string
+    public function getLogo(): int
     {
         return $this->logo;
     }
 
-    public function setLogo(string $logo): void
+    public function setLogo(int $logo): void
     {
         $this->logo = $logo;
     }
