@@ -10,6 +10,7 @@ class Team{
     public function __construct(string $name, string $description, Media $logo){
 
     }
+    
     public function getId(): ?int
     {
         return $this->id;
@@ -40,12 +41,12 @@ class Team{
         $this->description = $description;
     }
 
-    public function getLogo(): int
+    public function getLogo(): Media
     {
         return $this->logo;
     }
 
-    public function setLogo(int $logo): void
+    public function setLogo(Media $logo): void
     {
         $this->logo = $logo;
     }
