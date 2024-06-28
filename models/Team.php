@@ -1,13 +1,13 @@
 <?php
 
-class Teams{
+class Team{
 
     private ? int $id = null;
     private string $name;
     private string $description;
-    private int $logo;
+    private Media $logo;
 
-    public function __construct(string $name, string $description, int $logo){
+    public function __construct(string $name, string $description, Media $logo){
 
     }
     public function getId(): ?int
